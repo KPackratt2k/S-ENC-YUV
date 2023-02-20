@@ -18,10 +18,10 @@ As more gamers discover the benefits that RGB has to offer over the bog-standard
 There are multiple variations of the mod board to choose from based on the two different methods tested. The one to choose will vary on a variety of factors (such as your video encoder chip, console revision, or even your TV/Scaler's way of processing the image). Owners of consoles with the BA6592F encoder had the best results with the Type-A configuration (with S8050 transistors) while owners of S-ENC consoles had the best results with Type-B (passive). If in doubt, order the advanced full-size board and test it with different configurations to see which one works best for you.
 
 OSHPark links:
-[Advanced](https://oshpark.com/shared_projects/vhEn3k7J)
-[Mini Type-A](https://oshpark.com/shared_projects/ZWxqDEtu)
-[Mini Type-B](https://oshpark.com/shared_projects/uE9ANfrs)
-[Multi-Out Board for easy installation](https://oshpark.com/shared_projects/abuhMZIt)
+- [Advanced](https://oshpark.com/shared_projects/vhEn3k7J)
+- [Mini Type-A](https://oshpark.com/shared_projects/ZWxqDEtu)
+- [Mini Type-B](https://oshpark.com/shared_projects/uE9ANfrs)
+- [Multi-Out Board for easy installation](https://oshpark.com/shared_projects/abuhMZIt)
 
 -----------
 
