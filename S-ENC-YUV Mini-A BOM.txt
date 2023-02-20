@@ -1,0 +1,25 @@
+R1, R2:
+2x 75 ohm resistors
+Digikey: CF14JT75R0CT-ND
+
+R3:
+10 ohm resistor
+Digikey: CF14JT10R0CT-ND
+(Optionally used to attenuate Luma, can short if not needed.)
+
+D1, D2:
+2x 1n4148 diodes
+Digikey: 1N4148FS-ND
+
+C1, C2:
+2x 220 uF 6.3v Electrolytic Capacitors
+Digikey: 1189-2337-ND
+
+Q1, Q2:
+2x S8050 transistors (can substitute for 2N3904 or 2SC2412)
+Digikey: SS8050CBU-ND
+
+Input Jack:
+SJ1-43502PM
+4-pin TRRS 3.5mm jack
+Digikey: CP-SJ1-43502PM-ND
