@@ -124,9 +124,9 @@ If everything is working the way it should, you can reassemble the console and e
 
 ## Credits
 
-Nicolas Livaditis
-thesteve
-Duo_R
-Michael Moffitt
-Console5 Wiki
-The NESDev Forum
+- Nicolas Livaditis
+- thesteve
+- Duo_R
+- Michael Moffitt
+- Console5 Wiki
+- The NESDev Forum
