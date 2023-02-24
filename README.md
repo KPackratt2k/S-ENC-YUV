@@ -1,7 +1,14 @@
 # S-ENC-YUV
-A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6594F and S-ENC video encoder chips.
+A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6592F and S-ENC (a.k.a. BA6594F) video encoder chips.
 
 **IMPORTANT:** This mod is compatible with early SNES and Super Famicom console revisions (serial number beginning with UN22 or less) only. Later SNES and Super Famicom consoles which utilize the S-RGB encoder lack the Pb and Pr outputs necessary for this mod, therefore this mod will not work on later consoles.
+
+Compatible revisions:
+- SHVC-CPU-01
+- SNS-CPU-GPM-01
+- SNS-CPU-GPM-02
+- SNSP-CPU-01
+- SNSP-CPU-02
 
 The SNES (or Super Famicom in Japan) outputs at a 15KHz 240p resolution, which most modern HDTVs will not accept over Component YPbPr (even if it can accept it over Composite). Please refer to [this webpage](https://www.hdretrovision.com/240p) for a list of TVs that have been tested as well as instructions on how to determine if your set can accept a 240p input in the event you can't find your TV in the compatibility list. If your TV cannot accept 240p over Component, then you must use a dedicated video scaler (e.g. RetroTink 2X, RetroTink 5X, OSSC, Framemeister, or GBS Control) to upscale the 240p signal. Users of CRT SDTVs, PVMs, or BVMs may disregard this message.
 
@@ -15,7 +22,7 @@ As more gamers discover the benefits that RGB has to offer over the bog-standard
 
 ## Variations
 
-There are multiple variations of the mod board to choose from based on the two different methods tested. The one to choose will vary on a variety of factors (such as your video encoder chip, console revision, or even your TV/Scaler's way of processing the image). Type A uses a transistor setup similar to the original AV output circuit of the SNES, while Type B uses basic passive components. If you're not sure which one to use, order the advanced full-size board and test it with different configurations to see which one works best for you. Further testing will eventually be conducted to determine which circuit will be the most ideal for certain configurations.
+There are multiple variations of the mod board to choose from based on the two different methods tested. The one to choose will vary on a variety of factors (such as your video encoder chip, console revision, or even your TV/Scaler's way of processing the image). Type A uses a transistor setup similar to the original AV output circuit of the SNES and is best suited for the BA6592F encoder (common on most SHVC-CPU-01 consoles), while Type B uses basic passive components and is suited best for the S-ENC encoder (common on all other compatible revisions). If you're not sure which one to use, order the advanced full-size board and test it with different configurations to see which one works best for you.
 
 OSHPark links:
 - [Advanced](https://oshpark.com/shared_projects/vhEn3k7J)
@@ -50,7 +57,7 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Heat shrink tubes
 - Soldering iron
 - Hot air gun or SMD rework station (for melting the heat shrink tubes)
-- A drill with 2mm (or smaller) and 6mm drill bits
+- A drill with 2mm (5/16") and 6mm (1/4") drill bits
 
 ### Advanced Board Configurations
 
@@ -102,7 +109,7 @@ Place the wires onto the corresponding input pads and cut them to size so there'
 
 Once the wires are cut to size, strip them, then tin both the wire ends and the pads on the board. Solder the wires onto their corresponding pads.
 
-Use a small drill bit to drill a hole on the right-side of the bottom shell where the 3.5mm jack will be mounted. Once the small hole is drilled, use an M7x0.75 (6mm) drill bit to enlarge the hole. Test fit the jack and enlarge the hole slightly more if necessary.
+Use a small drill bit (5/16") to drill a hole on the right-side of the bottom shell where the 3.5mm jack will be mounted. Once the small hole is drilled, use an M7x0.75 (6mm or 1/4") drill bit to enlarge the hole. Take your time when drilling the holes and be careful not to drill too fast. Test fit the jack and enlarge the hole slightly more if necessary.
 
 Solder wires onto the jack on the following pins:
 1. Green
@@ -130,3 +137,4 @@ If everything is working the way it should, you can reassemble the console and e
 - Michael Moffitt
 - The Console5 Wiki
 - The NESDev Forum
+- The PC Engine-FX Forum
