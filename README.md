@@ -1,5 +1,5 @@
 # S-ENC-YUV
-A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6592F and S-ENC video encoder chips.
+A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6594F and S-ENC video encoder chips.
 
 **IMPORTANT:** This mod is compatible with early SNES and Super Famicom console revisions (serial number beginning with UN22 or less) only. Later SNES and Super Famicom consoles which utilize the S-RGB encoder lack the Pb and Pr outputs necessary for this mod, therefore this mod will not work on later consoles.
 
@@ -15,7 +15,7 @@ As more gamers discover the benefits that RGB has to offer over the bog-standard
 
 ## Variations
 
-There are multiple variations of the mod board to choose from based on the two different methods tested. The one to choose will vary on a variety of factors (such as your video encoder chip, console revision, or even your TV/Scaler's way of processing the image). Owners of consoles with the BA6592F encoder had the best results with the Type-A configuration (with S8050 transistors) while owners of S-ENC consoles had the best results with Type-B (passive). If in doubt, order the advanced full-size board and test it with different configurations to see which one works best for you.
+There are multiple variations of the mod board to choose from based on the two different methods tested. The one to choose will vary on a variety of factors (such as your video encoder chip, console revision, or even your TV/Scaler's way of processing the image). Type A uses a transistor setup similar to the original AV output circuit of the SNES, while Type B uses basic passive components. If you're not sure which one to use, order the advanced full-size board and test it with different configurations to see which one works best for you. Further testing will eventually be conducted to determine which circuit will be the most ideal for certain configurations.
 
 OSHPark links:
 - [Advanced](https://oshpark.com/shared_projects/vhEn3k7J)
@@ -32,7 +32,7 @@ It is recommended to use an XBOX 360 E Composite AV cable (easy to find for chea
 - **White**: Component Pb
 - **Red**: Component Pr
 
-Using the wiring configuration mentioned in the mod instructions, the cable will work as intended.
+When using the wiring configuration mentioned in the mod instructions, the cable will work as intended.
 
 I've decided against using RCA jacks for this mod because the SHVC-CPU-01 revision does not have enough room to place them on the back panel, as most of the space there is taken up by the sound module.
 
@@ -49,7 +49,7 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Double-sided tape or adhesive pads
 - Heat shrink tubes
 - Soldering iron
-- Hot air gun or SMD rework station
+- Hot air gun or SMD rework station (for melting the heat shrink tubes)
 - A drill with 2mm (or smaller) and 6mm drill bits
 
 ### Advanced Board Configurations
@@ -85,9 +85,9 @@ Turn the console motherboard onto the front, solder the red wire onto pin 1 of t
 
 Reinstall the bottom shield onto the SNES motherboard, and take care routing the wires from the Multi-Out board when doing so.
 
-Reinstall the RF modulator shield onto place, reinsert the screws that hold it in place, and apply electrical or kapton tape on the side above the RF modulator/jack panel.
+Reinstall the RF modulator shield onto place, reinsert the screws that hold it in place, and apply electrical or Kapton tape on the side above the RF modulator/jack panel.
 
-Apply kapton tape onto the back of the mod board, then apply the double-sided tape/adhesive pad onto the same side.
+Apply Kapton tape onto the back of the mod board, then apply the double-sided tape/adhesive pad onto the same side.
 
 Stick the mod board on top of the RF shield, as close to the side facing the jack panel as possible, with the output pads facing left and the input pads facing right.
 
@@ -112,7 +112,7 @@ Solder wires onto the jack on the following pins:
 
 Refer to the [SJ1-43502PM Datasheet](https://www.cuidevices.com/product/resource/sj1-43502pm.pdf) for pin locations.
 
-Once you have the wires soldered on the jack, it would be a good idea to add heat shrink tubes onto them to reduce stress on the wires.
+Once you have the wires soldered onto the jack, it would be a good idea to add heat shrink tubes onto them to reduce stress on the wires.
 
 Install the 3.5mm jack and the SNES motherboard in the bottom shell, run the wires from the jack onto the output pads on the mod board, cut the wires to size, strip the ends of the wires, tin both the mod board pads and the wires, and solder the wires onto the corresponding pads.
 
@@ -128,5 +128,5 @@ If everything is working the way it should, you can reassemble the console and e
 - thesteve
 - Duo_R
 - Michael Moffitt
-- Console5 Wiki
+- The Console5 Wiki
 - The NESDev Forum
