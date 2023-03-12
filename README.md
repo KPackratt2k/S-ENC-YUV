@@ -1,7 +1,7 @@
 # S-ENC-YUV
 A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6592F and S-ENC (a.k.a. BA6594F) video encoder chips.
 
-**IMPORTANT:** This mod is compatible with early SNES and Super Famicom console revisions (serial number beginning with UN22 or less) only. Later SNES and Super Famicom consoles which utilize the S-RGB encoder lack the Pb and Pr outputs necessary for this mod, therefore this mod will not work on later consoles.
+**IMPORTANT:** This mod is compatible with early SNES and Super Famicom console revisions (serial number beginning with UN272 or less) only. Later SNES and Super Famicom consoles which utilize the S-RGB encoder lack the Pb and Pr outputs necessary for this mod, therefore this mod will not work on later consoles.
 
 Compatible revisions:
 - SHVC-CPU-01
@@ -10,7 +10,7 @@ Compatible revisions:
 - SNSP-CPU-01
 - SNSP-CPU-02
 
-The SNES (or Super Famicom in Japan) outputs at a 15KHz 240p resolution, which most modern HDTVs will not accept over Component YPbPr (even if it can accept it over Composite). Please refer to [this webpage](https://www.hdretrovision.com/240p) for a list of TVs that have been tested as well as instructions on how to determine if your set can accept a 240p input in the event you can't find your TV in the compatibility list. If your TV cannot accept 240p over Component, then you must use a dedicated video scaler (e.g. RetroTink 2X, RetroTink 5X, OSSC, Framemeister, or GBS Control) to upscale the 240p signal. Users of CRT SDTVs, PVMs, or BVMs may disregard this message.
+The SNES outputs at a 15KHz 240p resolution, which most modern HDTVs will not accept over Component YPbPr (even if it can accept it over Composite). Please refer to [this webpage](https://www.hdretrovision.com/240p) for a list of TVs that have been tested as well as instructions on how to determine if your set can accept a 240p input in the event you can't find your TV in the compatibility list. If your TV cannot accept 240p over Component, then you must use a dedicated video scaler (e.g. RetroTink 2X, RetroTink 5X, OSSC, Framemeister, or GBS Control) to upscale the 240p signal. Users of CRT SDTVs, PVMs, or BVMs may disregard this message.
 
 ------------
 
@@ -30,6 +30,8 @@ OSHPark links:
 - [Mini Type-B](https://oshpark.com/shared_projects/uE9ANfrs)
 - [Multi-Out Board for easy installation](https://oshpark.com/shared_projects/abuhMZIt)
 
+It is recommended to order the small Multi-Out board with a 0.8 mm thickness.
+
 -----------
 
 ## Output Cable
@@ -41,7 +43,7 @@ It is recommended to use an XBOX 360 E Composite AV cable (easy to find for chea
 
 When using the wiring configuration mentioned in the mod instructions, the cable will work as intended.
 
-I've decided against using RCA jacks for this mod because the SHVC-CPU-01 revision does not have enough room to place them on the back panel, as most of the space there is taken up by the sound module.
+I've decided against using RCA jacks for this mod because the SHVC-CPU-01 revision does not have enough room to place them on the back panel as most of the space there is taken up by the sound module.
 
 This cable will not provide audio. You must use your old Composite AV cables to provide the audio from the console.
 
@@ -54,9 +56,10 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Solid core wire or leads from a sacrificial component (such as a spare resistor)
 - Kapton tape or electrical tape
 - Double-sided tape or adhesive pads
+- A Game-bit screwdriver (for opening the console)
+- A Philips screwdriver (for removing the screws that hold the motherboard in place)
 - Heat shrink tubes
 - Soldering iron
-- Hot air gun or SMD rework station (for melting the heat shrink tubes)
 - A drill with 2mm (5/16") and 6mm (1/4") drill bits
 
 ### Advanced Board Configurations
@@ -88,7 +91,7 @@ On the back of the console motherboard, solder the Multi-Out board onto the cons
 
 Solder the Yellow wire to the 5V pad (optional for Types B and C), the Green wire to the Y pad, and the Black wire to the GND pad.
 
-Turn the console motherboard onto the front, solder the red wire onto pin 1 of the video encoder chip (the bottom-left corner pin marked by the dot) and the blue wire onto pin 24 (the top-left corner pin).
+Turn the console motherboard onto the front, solder the red wire onto pin 1 of the video encoder chip (the bottom-left corner pin marked by the dot) and the blue wire onto pin 24 (the top-left corner pin). On some motherboard revisions, the numbers of the pins may be labeled, which makes it easier to tell where your wires need to go.
 
 Reinstall the bottom shield onto the SNES motherboard, and take care routing the wires from the Multi-Out board when doing so.
 
@@ -96,7 +99,7 @@ Reinstall the RF modulator shield onto place, reinsert the screws that hold it i
 
 Apply Kapton tape onto the back of the mod board, then apply the double-sided tape/adhesive pad onto the same side.
 
-Stick the mod board on top of the RF shield, as close to the side facing the jack panel as possible, with the output pads facing left and the input pads facing right.
+Stick the mod board on top of the RF shield as close to the side facing the jack panel as possible, with the output pads facing left and the input pads facing right.
 
 Place the wires onto the corresponding input pads and cut them to size so there's as little slack as possible.
 
@@ -109,7 +112,7 @@ Place the wires onto the corresponding input pads and cut them to size so there'
 
 Once the wires are cut to size, strip them, then tin both the wire ends and the pads on the board. Solder the wires onto their corresponding pads.
 
-Use a small drill bit (5/16") to drill a hole on the right-side of the bottom shell where the 3.5mm jack will be mounted. Once the small hole is drilled, use an M7x0.75 (6mm or 1/4") drill bit to enlarge the hole. Take your time when drilling the holes and be careful not to drill too fast. Test fit the jack and enlarge the hole slightly more if necessary.
+Use a small drill bit (5/16") to drill a hole on the right-side of the bottom shell where the 3.5mm jack will be mounted. Once the small hole is drilled, use an M7x0.75 (6mm or 1/4") drill bit to enlarge the hole. Take your time when drilling the holes and be careful not to drill too fast as the plastic can be brittle depending on how well the console has been taken care of during its lifetime. Test fit the jack and enlarge the hole slightly more if necessary.
 
 Solder wires onto the jack on the following pins:
 1. Green
@@ -119,7 +122,7 @@ Solder wires onto the jack on the following pins:
 
 Refer to the [SJ1-43502PM Datasheet](https://www.cuidevices.com/product/resource/sj1-43502pm.pdf) for pin locations.
 
-Once you have the wires soldered onto the jack, it would be a good idea to add heat shrink tubes onto them to reduce stress on the wires.
+Once you have the wires soldered onto the jack, it would be a good idea to add heat shrink tubes onto them to reduce stress on the wires and prevent any shorts.
 
 Install the 3.5mm jack and the SNES motherboard in the bottom shell, run the wires from the jack onto the output pads on the mod board, cut the wires to size, strip the ends of the wires, tin both the mod board pads and the wires, and solder the wires onto the corresponding pads.
 
