@@ -53,7 +53,7 @@ This cable will not provide audio. You must use your old Composite AV cables to 
 
 Refer to the Bill of Materials (BOM) documents for each board depending on the one you'll be using. Populate the components accordingly to the correct locations and solder them into place. In addition to the parts listed in the corresponding BOM documents, you will need:
 - Black, Red, Yellow, Green, and Blue colored wires (I recommend 28 AWG rainbow ribbon cable for this)
-- Solid core wire or leads from a sacrificial component (such as a spare resistor)
+- Solid core wire or leads cut from a component
 - Kapton tape or electrical tape
 - Double-sided tape or adhesive pads
 - A Game-bit screwdriver (for opening the console)
@@ -61,6 +61,8 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Heat shrink tubes
 - Soldering iron
 - A drill with 2mm (5/16") and 6mm (1/4") drill bits
+- Q-Tip (for cleaning any residing flux)
+- Isopropyl alcohol (for cleaning any residing flux)
 
 ### Advanced Board Configurations
 
@@ -68,12 +70,16 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Leave R3, R4, RV1, and RV2 unpopulated.
 - Jumper R3 and R4 with solid core wire or legs from a spare component.
 
+<img src="./Images/Config_A.jpg" width="400px" />
+
 #### Type B:
 - Leave R1, R2, D1, D2, Q1, and Q2 unpopulated.
 - Jumper the D1 anode pad to the R1 pad closest to C1.
 - Jumper the D2 anode pad to the R2 pad closest to C1.
 
-#### Type C:
+<img src="./Images/Config_B.jpg" width="400px" />
+
+#### Type C (WIP):
 - Assemble the board in the Type B configuration, wire the board to the console, test it, and adjust the pots until the image looks correct to you.
 - After adjustments are made, measure the resistance on VR1 from the negative leg of C1 to the Pb output pad, and get the closest matching resistor. Make note of the resistance so you don't mistake one resistor for another.
 - Measure VR2 resistance from the negative leg of C2 to the Pr output pad, and get the closest matching resistor. Make note of its resistance.
@@ -87,7 +93,7 @@ WIP: Images to be added soon and instructions will improve gradually once I have
 
 Assemble the mod board in the corresponding configuration, then completely disassemble your SNES or Super Famicom console.
 
-On the back of the console motherboard, solder the Multi-Out board onto the console's AV Multi-Out connector. Make sure you don't accidentally bridge any connections in the process. Use flux if you have any available.
+On the back of the console motherboard, solder the Multi-Out board onto the console's AV Multi-Out connector. Make sure you don't accidentally bridge any connections in the process. Use flux if you have any available. Gently remove residing flux with a Q-Tip and isopropyl alcohol when finished.
 
 Solder the Yellow wire to the 5V pad (optional for Types B and C), the Green wire to the Y pad, and the Black wire to the GND pad.
 
@@ -97,9 +103,16 @@ Reinstall the bottom shield onto the SNES motherboard, and take care routing the
 
 Reinstall the RF modulator shield onto place, reinsert the screws that hold it in place, and apply electrical or Kapton tape on the side above the RF modulator/jack panel.
 
+<img src="./Images/Electrical_Tape_RF_Shield.jpg" width="400px" />
+
 Apply Kapton tape onto the back of the mod board, then apply the double-sided tape/adhesive pad onto the same side.
 
+<img src="./Images/Kapton_Tape_on_Board.jpg" width="300px" />
+<img src="./Images/Double_Tape_on_Board.jpg" width="300px" />
+
 Stick the mod board on top of the RF shield as close to the side facing the jack panel as possible, with the output pads facing left and the input pads facing right.
+
+<img src="./Images/Final_Wiring.jpg" width="600px" />
 
 Place the wires onto the corresponding input pads and cut them to size so there's as little slack as possible.
 
