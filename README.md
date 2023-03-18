@@ -60,6 +60,7 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - A Philips screwdriver (for removing the screws that hold the motherboard in place)
 - Heat shrink tubes
 - Soldering iron
+- Side cutters
 - A drill with 2mm (5/16") and 6mm (1/4") drill bits
 - Q-Tip (for cleaning any residing flux)
 - Isopropyl alcohol (for cleaning any residing flux)
@@ -70,14 +71,14 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 - Leave R3, R4, RV1, and RV2 unpopulated.
 - Jumper R3 and R4 with solid core wire or legs from a spare component.
 
-<img src="./Images/Config_A.jpg" width="400px" />
+<img src="./Images/Config_A.jpg" width="600px" />
 
 #### Type B:
 - Leave R1, R2, D1, D2, Q1, and Q2 unpopulated.
-- Jumper the D1 anode pad to the R1 pad closest to C1.
-- Jumper the D2 anode pad to the R2 pad closest to C1.
+- Jumper the D1 anode pad to the Q1 emitter pad.
+- Jumper the D2 anode pad to the Q2 emitter pad.
 
-<img src="./Images/Config_B.jpg" width="400px" />
+<img src="./Images/Config_B.jpg" width="600px" />
 
 #### Type C (WIP):
 - Assemble the board in the Type B configuration, wire the board to the console, test it, and adjust the pots until the image looks correct to you.
@@ -91,24 +92,28 @@ Refer to the Bill of Materials (BOM) documents for each board depending on the o
 
 WIP: Images to be added soon and instructions will improve gradually once I have the time to finish it.
 
-Assemble the mod board in the corresponding configuration, then completely disassemble your SNES or Super Famicom console.
+Completely disassemble your SNES or Super Famicom console and inspect the video encoder chip to determine which configuration is suitable for your console. If yours is a BA6592F encoder, the Type-A configuration should provide the best results. If it's an S-ENC or a BA6594F, then the Type-B configuration should be sufficient.
+
+Once you have decided which configuration to use based on your video encoder type, assemble the S-ENC mod board using the BOM (Bill of Materials) and the photos above as reference.
 
 On the back of the console motherboard, solder the Multi-Out board onto the console's AV Multi-Out connector. Make sure you don't accidentally bridge any connections in the process. Use flux if you have any available. Gently remove residing flux with a Q-Tip and isopropyl alcohol when finished.
 
 Solder the Yellow wire to the 5V pad (optional for Types B and C), the Green wire to the Y pad, and the Black wire to the GND pad.
 
+Reinstall the bottom shield onto the SNES motherboard, and take care routing the wires from the Multi-Out board when doing so. Avoid routing the wires close to the screw posts as doing so may cause them to get pinched and short out as a result.
+
 Turn the console motherboard onto the front, solder the red wire onto pin 1 of the video encoder chip (the bottom-left corner pin marked by the dot) and the blue wire onto pin 24 (the top-left corner pin). On some motherboard revisions, the numbers of the pins may be labeled, which makes it easier to tell where your wires need to go.
 
-Reinstall the bottom shield onto the SNES motherboard, and take care routing the wires from the Multi-Out board when doing so.
+Reinstall the RF modulator shield onto place, reinsert the screws that hold it in place, and apply electrical or kapton tape on the side above the RF modulator/jack panel.
 
-Reinstall the RF modulator shield onto place, reinsert the screws that hold it in place, and apply electrical or Kapton tape on the side above the RF modulator/jack panel.
-
-<img src="./Images/Electrical_Tape_RF_Shield.jpg" width="400px" />
+<img src="./Images/Electrical_Tape_RF_Shield.jpg" width="600px" />
 
 Apply Kapton tape onto the back of the mod board, then apply the double-sided tape/adhesive pad onto the same side.
 
 <img src="./Images/Kapton_Tape_on_Board.jpg" width="300px" />
 <img src="./Images/Double_Tape_on_Board.jpg" width="300px" />
+
+Be sure to remove the backing on the double-sided tape once applied to the board.
 
 Stick the mod board on top of the RF shield as close to the side facing the jack panel as possible, with the output pads facing left and the input pads facing right.
 
@@ -125,13 +130,15 @@ Place the wires onto the corresponding input pads and cut them to size so there'
 
 Once the wires are cut to size, strip them, then tin both the wire ends and the pads on the board. Solder the wires onto their corresponding pads.
 
+Before drilling the hole for the 3.5mm jack, apply painter's tape on the right-side of the back of the shell, take the nut off the jack, place it on the bottom-right corner of the back of the shell (next to the power jack) with the outside of the nut on the edges of the corner, then use a pencil to draw the hole inside the nut on the tape. Once you have done this, use a ruler to draw lines in the middle of the hole to aid with drilling the pilot hole for the jack.
+
 Use a small drill bit (5/16") to drill a hole on the right-side of the bottom shell where the 3.5mm jack will be mounted. Once the small hole is drilled, use an M7x0.75 (6mm or 1/4") drill bit to enlarge the hole. Take your time when drilling the holes and be careful not to drill too fast as the plastic can be brittle depending on how well the console has been taken care of during its lifetime. Test fit the jack and enlarge the hole slightly more if necessary.
 
 Solder wires onto the jack on the following pins:
-1. Green
-2. Blue
-3. Red
-4. Black
+1. Green (Sleeve)
+2. Blue (Tip)
+3. Red (Ring 1)
+4. Black (Ring 2)
 
 Refer to the [SJ1-43502PM Datasheet](https://www.cuidevices.com/product/resource/sj1-43502pm.pdf) for pin locations.
 
