@@ -26,8 +26,8 @@ There are multiple variations of the mod board to choose from based on the two d
 
 OSHPark links:
 - [Advanced](https://oshpark.com/shared_projects/vhEn3k7J)
-- [Mini Type-A](https://oshpark.com/shared_projects/ZWxqDEtu)
-- [Mini Type-B](https://oshpark.com/shared_projects/uE9ANfrs)
+- [Mini Type-A](https://oshpark.com/shared_projects/W2nKIRFb)
+- [Mini Type-B](https://oshpark.com/shared_projects/YYqaIlj8)
 - [Multi-Out Board for easy installation](https://oshpark.com/shared_projects/abuhMZIt)
 
 It is recommended to order the small Multi-Out board with a 0.8 mm thickness.
