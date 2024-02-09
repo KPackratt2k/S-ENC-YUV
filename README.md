@@ -1,6 +1,8 @@
 # S-ENC-YUV
 A YPbPr mod kit for the first generation SNES and Super Famicom consoles utilizing the BA6592F and S-ENC (a.k.a. BA6594F) video encoder chips.
 
+**NOTICE:** This mod has been abandoned for a variety of reasons. Due to the video encoder's color difference pins outputting in the YIQ (for NTSC) or YUV (for PAL) colorspace, there are inaccurate colors when using this mod. In addition, I've experienced noise in the Luma channel on the console I've tested this with and have been unable to elimiate it entirely. If you're looking to use an SNES console on an SDTV or PVM with YPbPr inputs, I would recommend using an RGB SCART cable and an external RGB-to-YPbPr transcoder instead. If you choose to perform this mod to your console, understand its drawbacks and perform at your own risk.
+
 **IMPORTANT:** This mod is compatible with early SNES and Super Famicom console revisions (serial number beginning with UN272 or less) only. Later SNES and Super Famicom consoles which utilize the S-RGB encoder lack the Pb and Pr outputs necessary for this mod, therefore this mod will not work on later consoles.
 
 Compatible revisions:
